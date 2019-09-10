@@ -1,0 +1,71 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{beamer}           % pdfTeX の場合
+% 付録をページ数にカウントしない NPC
+\usepackage[orientation=portrait,size=a0,scale=1.3]{beamerposter}% whole 指定
+\setbeamertemplate{navigation symbols}{} % ナビゲーションを消す
+
+\usepackage[whole]{bxcjkjatype}% whole 指定
+\usepackage{algorithm}
+\usepackage{tcolorbox}
+\usepackage{algorithmic}
+%\usepackage{theorem}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{bbm}
+%\usepackage[dvipdfmx]{graphicx}
+\usepackage{graphicx}
+\usepackage{overpic}
+%\usepackage[absolute,overlay]{textpos}
+\usepackage[relative,overlay]{textpos}
+%\setbeamertemplate{background}[grid][step=30pt]
+
+\newcommand{\bhrule}{{\color{blue} \hrule}}
+
+\definecolor{nico}{rgb}{1, 0.90, 0.96}
+\definecolor{orange}{rgb}{0.95, 0.3, 0.0}
+\definecolor{ash}{rgb}{0.2,0.2,0.5}
+\definecolor{hoge}{rgb}{0.53,0.28,0.59}
+\definecolor{myblue}{rgb}{0.2,0.2,0.7}
+\setbeamercolor{mine}{fg=white,bg=blue!70!cyan}
+\renewcommand{\alert}[1]{{\color{orange} {#1} }}
+\renewcommand{\structure}[1]{{\color{blue!50!cyan} {#1} }}
+\tcbset{colframe=myblue,colback=white,boxsep=16px,before skip=-20px,left=30px} % textcolorbox settings
+
+\newcommand{\plus}{{\color{red} +1}}
+\newcommand{\minus}{{\color{blue} -1}}
+
+\title{全部分グラフ指示子上の分類森構築に向けて}
+\author{北海道大学大学院~修士1年~横山侑政}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbeamercolor{myframetitle}{fg=white,bg=myblue}
+
+\begin{document}
+~ \\
+\vspace{10px}
+\begin{beamercolorbox}[
+    wd=\hsize,
+    sep=32pt,     % パディング
+]{myframetitle}
+\begin{center}
+	{\Huge \inserttitle} \\
+	\medskip
+	\medskip
+	{\huge \insertauthor} \\
+\end{center}
+\end{beamercolorbox}
+
+\begin{columns}[T]
+	\begin{column}{0.50\hsize}
+		\input{problem.tex}
+		\input{gbdt.tex}
+	\end{column}
+	\begin{column}{0.50\hsize}
+		\input{xgboost.tex}
+		\input{rgf.tex}
+		\input{ref.tex}
+	\end{column}
+\end{columns}
+
+\end{document}

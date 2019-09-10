@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<svg x="0" y="0" width="600" height="600" viewBox="-10 -10 620 620" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+	<rect x="0" y="0" width="600" height="600" fill="none" stroke="blue" />
+
+	<g stroke="black" stroke-width="3" fill="none" >
+		<circle cx="300" cy="300" r="80" />
+		<circle cx="300" cy="300" r="180" />
+		<circle cx="300" cy="300" r="280" />
+	</g>
+
+	<g text-anchor="middle" dominant-baseline="hanging" stroke="white" stroke-width="1" fill="blue" font-size="72px" >
+		<text x="300" y="220" >P</text>
+		<text x="300" y="120" >E</text>
+		<text x="300" y="020" >EXP</text>
+	</g>
+
+</svg>

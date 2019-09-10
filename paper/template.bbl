@@ -1,0 +1,23 @@
+\begin{thebibliography}{1}
+
+\bibitem{gBoost}
+Hiroto Saigo, Sebastian Nowozin, Tadashi Kadowaki, Taku Kudo, and Koji Tsuda.
+\newblock gboost: a mathematical programming approach to graph classification
+  and regression.
+\newblock {\em Machine Learning}, Vol.~75, No.~1, pp. 69--89, 2009.
+
+\bibitem{mcts_survey}
+C.~B. {Browne}, E.~{Powley}, D.~{Whitehouse}, S.~M. {Lucas}, P.~I. {Cowling},
+  P.~{Rohlfshagen}, S.~{Tavener}, D.~{Perez}, S.~{Samothrakis}, and
+  S.~{Colton}.
+\newblock A survey of monte carlo tree search methods.
+\newblock {\em IEEE Transactions on Computational Intelligence and AI in
+  Games}, Vol.~4, No.~1, pp. 1--43, March 2012.
+
+\bibitem{fuse}
+Romaric Gaudel and Mich{\`e}le Sebag.
+\newblock {Feature Selection as a One-Player Game}.
+\newblock In {\em {International Conference on Machine Learning}}, ICML 2010
+  Conference Proceedings Book, pp. 359--366, Haifa, Israel, June 2010.
+
+\end{thebibliography}
