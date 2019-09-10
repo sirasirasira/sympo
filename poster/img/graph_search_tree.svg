@@ -202,8 +202,9 @@
 		<path d="M 1000 490 L 1100 600"  />
 		<path d="M 1100 800 L 1100 900" stroke-dasharray="9" />
 		<path d="M 1200 220 L 1400 350"  />
-		<path d="M 1400 490 L 1350 600" stroke-dasharray="9" />
 		<path d="M 1400 490 L 1500 600" stroke-dasharray="9" />
+		<path d="M 1000 490 L 400 650"  />
+		<path d="M 1400 490 L 1200 600"  />
 </g>
 	<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#kw" x="400" y="130" />
 	<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#kwg" x="250" y="400" />
