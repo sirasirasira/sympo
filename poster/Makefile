@@ -5,7 +5,7 @@ all:
 	#platex $(file_name).tex
 	#dvipdfmx $(file_name).dvi
 	pdflatex $(file_name).tex
-	open $(file_name).pdf &
+	evince $(file_name).pdf &
 
 pdf: $(file_name).dvi
 	dvipdfmx $(file_name).dvi

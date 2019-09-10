@@ -1,0 +1,22 @@
+\begin{tcolorbox}[colbacktitle=gray, title={\fontsize{35pt}{0pt}\selectfont 枝刈り規則}]
+	\structure{探索空間の特性} \\
+	\vspace{10pt}\\
+	子ノード($c$)は親ノード($p$)の拡大グラフとなる　($p \subset c$) \\ 
+	$\rightarrow$ 子孫ノード$c$を含むグラフ集合は親ノード$p$を含むグラフ集合の部分集合となる \\
+	\begin{equation*}
+		D_1(c) \subseteq D_1(p)
+	\end{equation*}
+	\vspace{15pt}\\
+	\structure{評価値の上限} \\
+	\vspace{10pt}\\
+	$D_1(g)$と$D_0(g)$が与えられる時, $g' \supset g$を満たす全ての部分グラフに対して以下が成立
+	\begin{eqnarray*}
+		\TSS(D_1(g')) + \TSS(D_0(g')) \geq 
+		\mymin{(\diamond,k)} \Big[\TSS(D_1(g) \setminus S_{\diamond, k}) + \TSS(D_0(g) \cup S_{\diamond, k}) \Big]
+	\end{eqnarray*}
+	$ (\diamond, k) \in \{ \leq, > \} \times \{ 2, \dots, |D_1(g) - 1| \} $,
+	$S_{\diamond, k} \subset D_1(g)$,\\
+	\vspace{5pt}\\
+	$S_{\leq, k}$は$D_1(g)$を残差に関して降順にした際の上から$k$番目までの集合.
+	$S_{>, k}$は昇順.
+\end{tcolorbox}

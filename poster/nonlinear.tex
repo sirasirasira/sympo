@@ -1,35 +1,36 @@
 \begin{tcolorbox}[colbacktitle=gray, title={\fontsize{35pt}{0pt}\selectfont 非線形グラフ分類回帰モデル}]
 	\structure{回帰木} \\
-	\vspace*{-10pt} 
+	\vspace{10pt}\\
 	\input{dt.tex}
 
-	\vspace*{-20pt} 
 	\structure{勾配ブースティング} \\
-	\vspace*{5pt} \\
+	\vspace{10pt}\\
 	加法的アンサンブルモデル
-	\begin{equation}
+	\begin{equation*}
 		F(G) = T_0(G) + s T_1(G) + s T_2(G) + s T_3(G) + \cdots
-	\end{equation}
+	\end{equation*}
 	%\vspace{-30pt} \\
 	$T_k$ : 各反復における残差$r_i$に対する回帰木.
-	\begin{equation}
+	\begin{equation*}
 		r_i = \frac{\partial \mathrm{L}(y_i, F_{k-1}(G_i))}{\partial F}
-	\end{equation}
+	\end{equation*}
 	\color{ash}
 	$s$ : 学習率, \hspace{10pt} $\mathrm{L}$ : 損失関数.
-	\vspace*{20pt} 
+	\vspace{30pt}\\
 
 	\color{black}
 	\structure{内部ノードにおける分割ルールの学習} \\
-	\vspace*{5pt} \\
+	\vspace{10pt}\\
 	二乗誤差和を最小化する分割ルール(部分グラフ)の学習
-	\begin{equation}
+	\begin{equation*}
 		\arg\mymin{x_j \in X} \big[ \TSS(D_1(x_j)) + \TSS(D_0(x_j)) \big]
 		\label{min:internal}
 		\vspace{-5pt}
-	\end{equation}
+	\end{equation*}
 	$X$ : 全部分グラフ集合(\alert{全列挙は困難}) \\
+	\vspace{5pt}\\
 	$D_1(x_j)$ : $ \{x_j$を含むグラフ集合$\}$, \hspace{30pt} $D_0(x_j)$ : $ \{x_j$を含まないグラフ集合$\}$ \\
+	\vspace{5pt}\\
 	$\TSS(D)$ : 残差$r_i$に対する二乗誤差和 \\
 	\vspace{-10pt}
 \end{tcolorbox}

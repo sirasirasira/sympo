@@ -83,14 +83,16 @@
 \newcommand{\fss}[2]{\addstackgap{\shortstack{\bf #1\\#2}}}
 
 %TODO 黄色をポスター印刷機用にもっと明るくする
-\title{\fontsize{65pt}{0pt} \selectfont 適応的な部分グラフ指示子の探索・選択に基づく非線形グラフ分類回帰}
-\author{\large 白川　稜,　横山　侑政,　岡崎　文哉,　瀧川　一学 ~~~北海道大学 \fontsize{40pt}{0pt} \selectfont~email:sira@ist.hokudai.ac.jp}
+\title{\fontsize{62pt}{0pt} \selectfont モンテカルロ木特徴探索に基づく非線形グラフ分類回帰}
+\author{\large 白川　稜,　中村　篤祥,　工藤　峰一 ~~~~~北海道大学 
+\fontsize{34pt}{0pt} \selectfont~Email：sira@ist.hokudai.ac.jp}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \setbeamercolor{myframetitle}{fg=white,bg=myblue}
 
 \begin{document}
+\fontsize{34pt}{0pt} \selectfont
 ~ \\
 \begin{beamercolorbox}[
     wd=\textwidth,
@@ -108,43 +110,40 @@
 \end{center}
 \end{beamercolorbox}
 
-\vspace{-20pt}
+\vspace{20pt}
 \begin{columns}[T]
 	\begin{column}{0.50\textwidth}
 		\input{summary.tex}
+		\vspace{5pt}
 		\input{background.tex}
-		\input{graph_classification.tex}
 	\end{column}
 	\begin{column}{0.50\textwidth}
-		\input{approach.tex}
-		\input{experiment.tex}
+		\input{graph_classification.tex}
+		%\input{experiment.tex}
 	\end{column}
 \end{columns}
 
+\vspace{3pt}
+\input{approach.tex}
+\vspace{5pt}
 
-\vspace{10pt}
 \begin{beamercolorbox}[
 		wd=1.01\textwidth,
 		sep=0pt,     % パディング 2pt
 	]{myframetitle}
 	\begin{center}
-		{\Large 提案手法} \\
+		{\large 提案手法} \\
 	\end{center}
 \end{beamercolorbox}
-\vspace{12pt}
+\vspace{14pt}
 
-\fontsize{30pt}{0pt} \selectfont
 \begin{columns}[T]
 		\begin{column}{0.50\textwidth}
 			\input{nonlinear.tex}
+			\input{prune.tex}
 		\end{column}
 		\begin{column}{0.50\textwidth}
 			\input{search.tex}
 		\end{column}
 \end{columns}
-\fontsize{22pt}{0pt} \selectfont{
-Jointly Learning Relevant Subgraph Patterns and Nonlinear Models of Their Indicators.
-The 14th International Conference on Mining and Learning with Graphs (MLG 2018), KDD'18 Workshop, London, U.K., August 20, 2018
-}
-
 \end{document}
